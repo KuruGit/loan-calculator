@@ -7,7 +7,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-
+<style>
+    #loading,#results{
+        display:none;
+    }
+</style>
     <title>Finanzierungsrechner</title>
   </head>
   <body class="bg-dark">
@@ -38,9 +42,9 @@
                         </div>                   
                      </form>
                 <!-- LADEANIMATION HIER EINFÜGEN -->
-                <!-- <div id="loading">
+                <div id="loading">
                     <img src="img/loading.gif">
-                </div> -->
+                </div>
                 <!-- ERGEBNISSE HIER EINFÜGEN -->
                 <div id="results" class="pt-4">
                 <h5>Ergebnis</h5>
