@@ -1,14 +1,77 @@
-!<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-</head>
-<body>
-    
-</body>
+<!doctype html>
+<html lang="de">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <title>Finanzierungsrechner</title>
+  </head>
+  <body class="bg-dark">
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="card card-body text-center mt-5">
+                <h1 class="heading display-5 pb-3">Finanzierungsrechner</h1>
+                    <form id="loan-form">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon">€</span>
+                                <input type="number" class="form-control"id="amount" placeholder="zu finanzierende Summe">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon">%</span>
+                                <input type="number" class="form-control"id="interest" placeholder="Zinsen">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control"id="years" placeholder="Finanzierungsdauer">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="berechnen" class="btn btn-dark btn-block">
+                        </div>                   
+                     </form>
+                <!-- LADEANIMATION HIER EINFÜGEN -->
+                <!-- <div id="loading">
+                    <img src="img/loading.gif">
+                </div> -->
+                <!-- ERGEBNISSE HIER EINFÜGEN -->
+                <div id="results" class="pt-4">
+                <h5>Ergebnis</h5>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">monatliche Rate</span>
+                        <input type="number" class="form-control" id="monthly-payment" disabled>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">Gesamtsumme</span>
+                        <input type="number" class="form-control" id="total-payment" disabled>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">Zinszahlung gesamt</span>
+                        <input type="number" class="form-control"id="total interest" disabled>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  </body>
 </html>
